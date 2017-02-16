@@ -19,3 +19,10 @@
 >     
 >     实时编译sass->css：
 >     gulp watchSass
+
+### 说明
+
+- /sass/base/_fn.scss 为所有mixin,function的引用入口
+>所以在其它*.scss文件中要使用mixin,function的功能，只需要引入_fn.scss即可(参考/sass/common/_border.scss）
+
+- /sass/base/下的文件具体用途，请看各个文件的注释
