@@ -10,7 +10,7 @@ html,body,.container{
 body{
     font-family: $baseFont;
     overflow-x: hidden;
-    font-size: $baseFontSize;
+    font-size: $baseFontSize !important;
 }
 ul,li{
     list-style: none;
