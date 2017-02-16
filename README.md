@@ -2,13 +2,16 @@
 
 > 该分支使用gulp编译sass(webpack也可以，就不提供了)
 
-> DEMO使用了rem，动态计算使用了淘宝的[flexible.js](https://github.com/amfe/lib-flexible)（在index.html中引用了）
+> DEMO使用了rem，动态计算rem使用了淘宝的[flexible.js](https://github.com/amfe/lib-flexible)（在index.html中引用了）
 
 ### 安装&运行
 
 >     全局安装node.js
 >
->     全局安装:gulp:
+>     用git克隆项目(或者直接downing下来):
+>     git clone https://github.com/lzsheng/sass.git
+>
+>     全局安装gulp:
 >     npm install gulp -g
 > 
 >     安装相关依赖文件:
