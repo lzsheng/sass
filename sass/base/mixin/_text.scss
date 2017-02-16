@@ -1,0 +1,28 @@
+
+//强制不换行
+@mixin text_nowrap(){
+    white-space: nowrap;
+    word-wrap: normal;
+}
+//强制换行
+@mixin text_wrap() {
+    word-wrap:break-word;
+    word-break:break-all;
+}
+//单行超出，省略号
+@mixin ellipsis($w:auto) {
+    width: $w;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+//多行超出，省略号
+@mixin ellipsisLn($line:2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    @include text_wrap();
+}

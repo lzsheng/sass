@@ -1,0 +1,15 @@
+// 全局变量
+@import 'variable/_global';
+
+// mixin
+@import 'mixin/_mobile';
+@import 'mixin/_setOnepx';//移动端1px边框解决方案
+@import 'mixin/_setTriangular';//CSS三角形
+@import 'mixin/_setArrow';//CSS箭头
+@import 'mixin/_text';//文本类
+@import 'mixin/_image';//图像类
+@import 'mixin/_position';//定位类
+
+// function
+@import 'function/_pxTorem';// _(75)
+

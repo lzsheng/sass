@@ -1,0 +1,16 @@
+
+//水平，垂直居中---Translate方式
+@mixin position_middleByTranslate() {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+//水平，垂直居中---margin方式
+@mixin position_middleByMargin($w,$h){
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -($w/2);
+    margin-left: -($h/2);
+}

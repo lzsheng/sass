@@ -1,0 +1,15 @@
+//设计图大小（用于px->rem）
+$designPlane:750;//像素
+
+//page
+$maxWidth:768px;
+$baseFont:"Arial", "Helvetica", "sans-serif","Microsoft YaHei";
+$baseFontSize:14px !default;
+$baseFontColor:#f3f3f3 !default;
+//整体
+$topBarHeight:3rem !default;
+$footerNavHeight:2.5rem !default;
+
+//border颜色
+$borderColor_default:#cecece !default;
+$borderColor_darken:darken($borderColor_default,10%) !default;

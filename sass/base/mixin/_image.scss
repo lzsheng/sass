@@ -1,0 +1,45 @@
+
+
+//使用padding-top百分比，制作等比例缩放的图片
+//use padding-top's box
+@mixin image_pdTop($top: 100%, $position: relative, $width: 100%) {
+    padding-top: $top;
+    width: $width;
+    position: $position;
+}
+
+//the child of use padding-top's box
+@mixin image_pdTop__child{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+//制作4:3的等比例缩放图片
+
+//===html===
+// <div class="parent">
+//     <img src="xxx.png" />
+// </div>
+
+//===scss===
+// .parent{
+//     @include image_pdTop(75%);
+//     img{
+//         @include image_pdTop__child();
+//     }
+// }
+
+//===css===
+// .parent {
+//   padding-top: 75%;
+//   width: 100%;
+//   position: relative; }
+//   .parent img {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0; }

@@ -1,0 +1,21 @@
+@import '../base/_fn';
+
+// <div className="cell">
+//     <div className="cell-l">左</div>
+//     <div className="cell-m">中</div>
+//     <div className="cell-r">右</div>
+// </div>
+.cell{
+    position: relative;
+    display: flex;
+    align-items: center;
+    .cell-l{
+        text-align: left;
+    }
+    .cell-m{
+        flex: 1;
+    }
+    .cell-r{
+        text-align:right;
+    }
+}

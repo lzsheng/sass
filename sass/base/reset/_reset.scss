@@ -1,0 +1,41 @@
+@import '../_fn';
+@import './_normalize-3.0.3.min';
+
+html,body,.container{
+    height: 100%;
+    background-color: #f8f8f8;
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+body{
+    font-family: $baseFont;
+    overflow-x: hidden;
+    font-size: $baseFontSize;
+}
+ul,li{
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+a{
+    text-decoration:none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+*,:after,:before{
+    margin:0;
+    padding:0;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+input[type="tel"],input[type="text"],input[type="password"],textarea{-webkit-appearance:none;border-radius: 0}

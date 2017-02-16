@@ -1,0 +1,16 @@
+@import '../base/_fn';
+.borderT{
+    @include borderTopAfter();
+}
+.borderB{
+    @include borderBottomAfter();
+}
+.borderL{
+    @include borderLeftAfter();
+}
+.borderR{
+    @include borderRightAfter();
+}
+.borderAll{
+    @include borderAllAfter();
+}

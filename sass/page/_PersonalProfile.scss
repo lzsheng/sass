@@ -1,0 +1,123 @@
+@import '../base/_fn';
+
+$offsetLeft: _(40);
+$borderColor: #5e5e5f;
+
+.personal{
+
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    background-color: #162026;
+    color:$baseFontColor;
+    .pageTitle{
+        position: relative;
+        z-index: 2;
+        font-size: _(40);
+        text-align: center;
+        padding-top: _(36);
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-70%);
+        background-color: #263137;
+        width: 100%;
+        height: _(200);
+        border-radius: 27%;
+    }
+}
+
+.baseInfo{
+    display: flex;
+    height: _(296);
+    margin-top: _(20);
+    margin-left:$offsetLeft;
+    margin-right:$offsetLeft;
+    color:$baseFontColor;
+    @include borderBottomAfter($borderColor);
+    .leftBox{
+        img{
+            width: _(246);
+            height:  _(246);
+            border: 1px solid #7f6d55;
+        }
+        .personalName{
+            text-align: center;
+            font-size: _(30);
+        }
+    }
+    .rightBox{
+        flex: 1;
+        margin-left: _(30);
+        font-size: _(28);
+        .rightBox-top{
+            .cell{
+                padding:_(2) 0;
+            }
+            .eMail{
+                color: $baseFontColor;
+            }
+        }
+        .rightBox-bottom{
+            @include borderTopBefore($borderColor);
+            margin-top:_(5);
+            padding-top:_(15);
+            .cell-l{
+                .lightLine{
+                    display: block;
+                    width:_(10);
+                    background-color: #2b941f;
+                    font-size: 0.9em;
+                    margin-right: _(8);
+                }
+            }
+            .skill{
+                .cell{
+                    padding:_(5) 0;
+                }
+            }
+            .icon-linkedin{
+                width: _(96);
+                height:  _(96);
+                margin-right:_(16);
+            }
+        }
+    }
+}
+
+.TabPanle_content{
+    margin-top: _(15);
+    background-color: #162026;
+    color: #e3e3e3;
+    font-size: _(28);
+    .TabPanle_content_title,.TabPanle_content_text{
+        padding:_(15) $offsetLeft;
+    }
+    .TabPanle_content_title{
+        font-weight: bold;
+    }
+    .TabPanle_content_text{
+        background-color: #192732;
+        font-size: _(24);
+        line-height: 1.5em;
+        .cell{
+            padding:_(5) 0;
+        }
+    }
+    .demoLink{
+        padding:_(3) 0;
+        a{
+            display: block;
+            text-align: right;
+            color: #3b98d0;
+            text-decoration: underline;
+            font-size: 1.1em;
+            text-decoration: 1px;
+        }
+    }
+}

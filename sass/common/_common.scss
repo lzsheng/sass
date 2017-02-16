@@ -1,0 +1,53 @@
+@import '../base/_fn';
+
+@for $i from 5 through 15{
+    $tmp : $i * 2;
+    .font#{$tmp} {
+        font-size:#{$tmp}px !important;
+    }
+}
+@for $i from 1 through 5{
+    $tmp : $i * 2;
+    .marginT#{$tmp} {
+        margin-top:#{$tmp}px !important;
+    }
+    .marginB#{$tmp} {
+        margin-bottom:#{$tmp}px !important;
+    }
+    .marginL#{$tmp} {
+        margin-left:#{$tmp}px !important;
+    }
+    .marginR#{$tmp} {
+        margin-right:#{$tmp}px !important;
+    }
+}
+@for $i from 1 through 5{
+    $tmp : $i * 2;
+    .paddingT#{$tmp} {
+        padding-top:#{$tmp}px !important;
+    }
+    .paddingB#{$tmp} {
+        padding-bottom:#{$tmp}px !important;
+    }
+    .paddingL#{$tmp} {
+        padding-left:#{$tmp}px !important;
+    }
+    .paddingR#{$tmp} {
+        padding-right:#{$tmp}px !important;
+    }
+}
+
+.ellipsis{
+    @include ellipsis(100%);
+}
+.ellipsisLn2{
+    @include ellipsisLn(2);
+}
+.ellipsisLn3{
+    @include ellipsisLn(3);
+}
+
+//强制断句
+.freeLine{
+    @include text_wrap();
+}
