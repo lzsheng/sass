@@ -1,0 +1,5 @@
+
+@mixin bgImg($url){
+    background: url($url) no-repeat center center;
+        background-size: 100% 100%;
+}

@@ -21,7 +21,7 @@
 >     gulp buildDevSass
 >     
 >     实时编译sass->css：
->     gulp watchSass
+>     gulp watch
 
 ### 说明
 

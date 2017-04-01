@@ -1,9 +1,12 @@
 
 
 //使用padding-top百分比，制作等比例缩放的图片
-//use padding-top's box
-@mixin image_pdTop($top: 100%, $position: relative, $width: 100%) {
-    padding-top: $top;
+//$horizontal:水平方向的大小（number类型）
+//$vertical:垂直方向的大小（number类型）
+//通过($vertical / $horizontal) * 100%;计算比例，换算为百分比$proportion
+@mixin image_pdTop($horizontal: 1,$vertical:1, $position: relative, $width: 100%) {
+    $proportion: ($vertical / $horizontal) * 100%;//计算比例
+    padding-top: $proportion;
     width: $width;
     position: $position;
 }
@@ -26,7 +29,7 @@
 
 //===scss===
 // .parent{
-//     @include image_pdTop(75%);
+//     @include image_pdTop(4,3);
 //     img{
 //         @include image_pdTop__child();
 //     }

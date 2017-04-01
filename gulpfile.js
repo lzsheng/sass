@@ -32,6 +32,6 @@ gulp.task('buildDevSass', function(){//编译sass
 });
 
 //===开发scss-监听===//
-gulp.task('watchSass', function(){//监听
+gulp.task('watch', function(){//监听
 	gulp.watch(watchObj.sass, ['buildDevSass']);
 });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: Arial, Helvetica, "Microsoft YaHei";
@@ -219,7 +220,7 @@ html, body, .container {
   margin: 0 auto; }
 
 body {
-  font-family: "Arial", "Helvetica", "sans-serif", "Microsoft YaHei";
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   overflow-x: hidden;
   font-size: 14px !important; }
 
